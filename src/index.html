@@ -19,18 +19,21 @@
   </section>
   <div class="popup">
     <!-- Here goes your popup form HTML code -->
-    <form action="#" class="popup-form" method="post">
+    <form class="popup-form" method="get">
       <h1 class="popup-form-login">Login</h1>
       <button class="btn-close"><i class="fas fa-times-circle"></i></button>
       <div class="popup-form-email-row">
-        <input type="email" required name="email" id="email" required placeholder="E-mail">
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <div class="popup-form-email-error">Incorrect e-mail</div>
       </div>
       <div class="popup-form-password-row">
-        <input type="password" name="pwd" id="pwd" required placeholder="Password">
+        <input type="password" name="pwd" id="pwd" placeholder="Password" required minlength="6">
+        <div class="popup-form-password-error">Incorrect password(min. 6 char)</div>
       </div>
       <div class="popup-form-checkbox-row">
         <input type="checkbox" name="terms-conditions" id="terms-conditions" required>
         <label for="terms-conditions">I agree to terms & conditions.</label>
+        <div class="popup-form-checkbox-error">Please indicate that you accept the Terms and Conditions</div>
       </div>
       <div class="popup-form-submit-row">
         <button type="submit" class="btn-submit">Submit</button>
