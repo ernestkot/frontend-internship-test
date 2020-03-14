@@ -19,6 +19,7 @@ function closePopup() {
         inputsInFormPopup[i].removeAttribute('required');
     }
     divPopup.classList.remove('active');
+    formPopup.reset();
 }
 
 
