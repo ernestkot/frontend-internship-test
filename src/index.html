@@ -16,12 +16,12 @@
   <section class="main">
     <button id="show-popup-form" class="btn btn-main">Click me!</button>
     <!-- Display success message below -->
+    <div class="success-message">Thank you!</div>
   </section>
   <div class="popup">
     <!-- Here goes your popup form HTML code -->
-    <form class="popup-form" method="get">
+    <form action="#" class="popup-form">
       <h1 class="popup-form-login">Login</h1>
-      <button class="btn-close"><i class="fas fa-times-circle"></i></button>
       <div class="popup-form-email-row">
         <input type="email" name="email" id="email" placeholder="E-mail" required>
         <div class="popup-form-email-error">Incorrect e-mail</div>
@@ -39,6 +39,7 @@
         <button type="submit" class="btn-submit">Submit</button>
       </div>
     </form>
+    <button class="btn-close"><i class="fas fa-times-circle"></i></button>
   </div>
   <script src="js/index.min.js" charset="utf-8"></script>
 </body>
